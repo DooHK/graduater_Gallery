@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-card {
+            overflow: hidden;
+        }
+        .gallery-card img {
+            transition: transform 0.2s;
+        }
+        .gallery-card img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Gallery</h1>
+    <div class="row">
+        <!-- Image 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card gallery-card">
+                <img src="https://via.placeholder.com/600" class="card-img-top img-fluid" alt="Image 1" data-toggle="modal" data-target="#imageModal1">
+            </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card gallery-card">
+                <img src="https://via.placeholder.com/600" class="card-img-top img-fluid" alt="Image 2" data-toggle="modal" data-target="#imageModal2">
+            </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card gallery-card">
+                <img src="https://via.placeholder.com/600" class="card-img-top img-fluid" alt="Image 3" data-toggle="modal" data-target="#imageModal3">
+            </div>
+        </div>
+        <!-- Additional images... -->
+    </div>
+</div>
+
+<!-- Modals for each image -->
+<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/600" class="img-fluid" alt="Image 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/600" class="img-fluid" alt="Image 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/600" class="img-fluid" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
